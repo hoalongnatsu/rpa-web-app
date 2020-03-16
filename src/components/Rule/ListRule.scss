@@ -1,0 +1,42 @@
+.list-rule {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  @media screen and (max-width: 605px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1.5rem;
+    border: 1px dashed var(--color-primary-dark);
+    border-radius: 3px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+    transition: all .2s ease;
+
+    &:hover {
+      box-shadow: 0 14px 20px rgba(0, 0, 0, .16);
+    }
+
+    .icon {
+      width: 4rem;
+      height: 4rem;
+      fill: var(--color-primary-dark);
+    }
+
+    .text {
+      font-size: 2rem;
+      color: var(--color-primary-dark);
+    }
+  }
+}

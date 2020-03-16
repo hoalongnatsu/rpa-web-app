@@ -1,0 +1,28 @@
+.popup {
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+  width: 300px;
+
+  &__header {
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+      fill: var(--color-primary-dark);
+      cursor: pointer;
+    }
+  }
+
+  &__body {
+    padding: 1.5rem 2rem;
+    background: white;
+  }
+}

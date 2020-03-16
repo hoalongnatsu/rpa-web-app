@@ -1,0 +1,32 @@
+[
+  {
+    "name": "CV",
+    "icon": "/icon/cv.svg",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+  },
+  {
+    "name": "ID",
+    "icon": "/icon/id-card.svg",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+  },
+  {
+    "name": "Business Card",
+    "icon": "/icon/cv.svg",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+  },
+  {
+    "name": "AD",
+    "icon": "/icon/id-card.svg",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+  },
+  {
+    "name": "Book",
+    "icon": "/icon/cv.svg",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+  },
+  {
+    "name": "A4",
+    "icon": "/icon/id-card.svg",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+  }
+]

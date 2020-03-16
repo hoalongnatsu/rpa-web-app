@@ -1,0 +1,56 @@
+.result__toolbar {
+  display: flex;
+  padding: 0 1rem;
+
+  @media screen and (max-width: 330px) {
+    flex-direction: column;
+  }
+
+  .btn--export, .btn--filter {
+    width: 120px;
+    padding: .4rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 1px solid var(--color-primary-dark);
+    color: var(--color-primary-dark);
+    transition: all .1s ease;
+    cursor: pointer;
+    transition: all .2s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: var(--color-primary-dark);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .2s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    img {
+      height: 2rem;
+      width: 2rem;
+      margin-right: 5px;
+    }
+  }
+
+  .btn--export {
+    margin-right: 1rem;
+    border-radius: 3px;
+
+    @media screen and (max-width: 330px) {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}

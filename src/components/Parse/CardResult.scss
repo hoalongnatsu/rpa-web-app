@@ -1,0 +1,40 @@
+.card-result {
+
+  display: flex;
+
+  &__image {
+    flex: 1;
+    margin-right: 2rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    flex: 1;
+    font-size: 1.6rem;
+
+    .title {
+      font-size: 2.6rem;
+      color: var(--color-primary-dark);
+    }
+
+    .item {
+      display: flex;
+
+      @media screen and (max-width: 400px) {
+        flex-direction: column;
+      }
+    }
+
+    .key {
+      flex: 0 0 150px;
+      margin-right: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+}

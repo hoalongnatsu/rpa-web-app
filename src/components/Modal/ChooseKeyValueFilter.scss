@@ -1,0 +1,44 @@
+.table-review {
+  border: 1px solid #ddd;
+  table-layout: fixed;
+  font-size: small;
+
+  thead,
+  tbody,
+  tr,
+  td,
+  th {
+    display: block;
+  }
+
+  tr:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+  }
+
+  thead th {
+    height: 10px;
+  }
+
+  tbody {
+    height: 150px;
+    display: block;
+    overflow-y: auto;
+  }
+
+  tbody td,
+  thead th {
+    float: left;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .table td,
+  .table th {
+    padding: 0.2rem 0.45rem;
+  }
+}

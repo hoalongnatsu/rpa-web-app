@@ -1,0 +1,18 @@
+{
+  "arr_start": [
+    {
+      "type": "0",
+      "type_name": "Text match: after",
+      "show_input": true,
+      "type_input": "text"
+    }
+  ],
+  "arr_end": [
+    {
+      "type": "3",
+      "type_name": "After [X] lines",
+      "show_input": true,
+      "type_input": "number"
+    }
+  ]
+}

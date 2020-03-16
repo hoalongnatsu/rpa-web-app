@@ -1,0 +1,100 @@
+.upload-page {
+
+  &__header {
+    width: 250px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 315px) {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    margin-top: 3rem;
+    height: calc(100vh - 30rem);
+    border: 1px var(--color-primary-dark);
+    border-style: dashed;
+    position: relative;
+    padding: 1rem 1rem 5.8rem 1rem;
+    box-sizing: border-box;
+    transition: all .3s ease;
+
+    input[type="file"] {
+      display: none;
+    }
+
+    &.onDrag {
+      background: #e6f6ff;
+    }
+  }
+
+  &__view {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+
+    img {
+      width: 10rem;
+      height: 10rem;
+
+      @media screen and (max-width: 650px) {
+        width: 8rem;
+        height: 8rem;
+      }
+
+      @media screen and (max-width: 450px) {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin: 1rem 0 2rem 0;
+    font-weight: 100;
+
+    @media screen and (max-width: 650px) {
+      font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 350px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__button {
+
+    .btn {
+      padding: .6rem 2.2rem;
+      width: 200px;
+      border-radius: 0;
+      font-size: 1.5rem;
+      background: var(--color-primary);
+      color: var(--color-gray);
+      text-transform: uppercase;
+
+      @media screen and (max-width: 650px) {
+        padding: .4rem 1.8rem;
+        width: 150px;
+      }
+
+      @media screen and (max-width: 350px) {
+        width: 120px;
+        font-size: 1.3rem;
+        padding: .4rem 1rem;
+      }
+    }
+  }
+}

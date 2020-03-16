@@ -1,0 +1,40 @@
+.card-rule {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--color-primary-light);
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+  transition: box-shadow .1s ease;
+
+  &.disable {
+    cursor: initial;
+  }
+
+  &:not(.disable):hover {
+    box-shadow: 0 14px 20px rgba(0, 0, 0, .16);
+  }
+
+  &__icon {
+    margin-bottom: 1rem;
+    
+    img {
+      width: 6.5rem;
+      height: 6.5rem;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    color: var(--color-primary-dark);
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  &__content {
+    font-size: 1.4rem;
+    color: var(--color-primary-dark);
+  }
+}

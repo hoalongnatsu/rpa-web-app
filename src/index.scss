@@ -1,0 +1,90 @@
+:root {
+  /* Color */
+  --color-dark: #414141;
+  --color-dark-light: #666;
+  --color-gray: #f3f4f5;
+  --color-gray-drak: #e9e9e9;
+
+  --color-primary: #8abbd5;
+  --color-primary-dark: #418ab3;
+  --color-primary-light: #d8eafc;
+  --color-success: #67dbb0;
+  --color-success-dark: #32d296;
+  --color-success-light: #edfbf6;
+  --color-danger: #b96667;
+  --color-danger-dark: #bd4243;
+  --color-danger-light: #fef4f6;
+  --color-warning: #d29351;
+  --color-warning-dark: #d48128;
+  --color-warning-light: #fff6ee;
+  --color-secondary: #aba8a3;
+  --color-secondary-dark: #88847e;
+  --color-secondary-light: #c9c9c9;
+
+  --qh-breakpoint-s: 640px;
+  --qh-breakpoint-m: 960px;
+  --qh-breakpoint-l: 1200px;
+  --qh-breakpoint-xl: 1600px;
+}
+
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+%heading {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.h1 {
+  @extend %heading;
+  font-size: 3.8rem;
+}
+
+.h2 {
+  @extend %heading;
+  font-size: 3rem;
+}
+
+.h3 {
+  @extend %heading;
+  font-size: 2.4rem;
+}
+
+.h4 {
+  @extend %heading;
+  font-size: 2rem;
+}
+
+.h5 {
+  @extend %heading;
+  font-size: 1.5rem;
+}
+
+.h6 {
+  @extend %heading;
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  @media screen and (max-width: 1300px) {
+    max-width: 90%;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.form-control {
+  height: calc(3.4rem + 2px);
+  padding: .5rem 1.1rem;
+  font-size: 1.5rem;
+}

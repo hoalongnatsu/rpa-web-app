@@ -1,0 +1,16 @@
+.form-create-rule {
+  padding: 1rem;
+}
+
+.qh-modal {
+  
+  &__btn {
+    padding: 2px 2.5rem;
+    background: var(--color-primary-dark);
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    cursor: pointer;
+    transition: all .1s ease;
+    text-align: center;
+  }
+}

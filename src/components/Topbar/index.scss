@@ -1,0 +1,15 @@
+.navbar {
+  background-color: var(--color-primary-dark);
+  padding: .8rem 1.6rem;
+
+  &-brand {
+    color: var(--color-gray);
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    &:hover {
+      color: var(--color-gray);
+    }
+  }
+}

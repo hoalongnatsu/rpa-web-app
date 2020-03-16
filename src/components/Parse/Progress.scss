@@ -1,0 +1,29 @@
+.process-page {
+  
+  &__progress {
+    width: 325px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    @media screen and (max-width: 450px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .progress {
+      height: 1.4rem;
+      font-size: 1rem;
+    }
+  
+    .progress-bar {
+      background-color: var(--color-primary-dark);
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--color-primary-dark);
+    margin-bottom: 5px;
+  }
+}

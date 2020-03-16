@@ -1,0 +1,27 @@
+.list-file-upload {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-primary); 
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-dark); 
+  }
+
+  & > * {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
